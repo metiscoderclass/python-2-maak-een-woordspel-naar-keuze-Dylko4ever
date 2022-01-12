@@ -71,6 +71,7 @@ def fout():
         print("Game Over... :(\nHet juiste woord was:", woord)
         r = False
 def gewonnen():
+    global r
     print("Gewonnen! Het woord was:", woord)
     r = False
 
