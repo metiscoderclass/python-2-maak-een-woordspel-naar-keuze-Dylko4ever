@@ -103,7 +103,6 @@ def gewonnen(): # Gewonnen!
 
 setvar()
 while r: # Galgje loop
-    print(woord)
     if vletters == " ":
         while True: # Letter invoer loop, voor niet geldige input
             letter = input(f"Je hebt al geraden: {grwoord}\nKies een letter of kies ? om het geheime woord te raden: ").lower()
