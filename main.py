@@ -78,7 +78,7 @@ grlijst = []
 vletters = " "
 glijst = []
 def setvar(): # Reset de variablen
-    global woorden, woord, grwoord, grlijst, vletters, glijst
+    global woorden, woord, grwoord, grlijst, vletters, glijst, hlevel
     woorden = d.get_ranked() # 10000+ Nederlandse Woorden
     random.shuffle(woorden) # Shuffle de woorden
     woord = random.choice(woorden).lower() # Kies een random nederlands woord
@@ -86,6 +86,7 @@ def setvar(): # Reset de variablen
     grlijst = [] # Een lijst, heel belangrijk
     vletters = " " # Letters die fout zijn
     glijst = []
+    hlevel = 0
     for x in range(len(woord)):
         grlijst.append("-") # Maak het woord alleen dan met streepjes in een lijst
 
